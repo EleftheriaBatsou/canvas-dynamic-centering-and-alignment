@@ -1,0 +1,30 @@
+<html>
+<head>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<script>
+function draw(){
+    var ctx = document.getElementById('my_canvas').getContext('2d');
+    ctx.fillStyle = "magenta";
+    var rectW = 100;
+    var rectH = 100;
+    var rectX = (ctx.canvas.width * .5) - (rectW * .5);
+    var rectY = (ctx.canvas.height * .5) - (rectH * .5);
+    ctx.fillRect(rectX, rectY, rectW, rectH);
+}
+window.onload = draw;
+</script>
+</head>
+<body>
+  
+  <h3 style="text-align: center">Canvas | Dynamic Centering and Alignment </h3>
+  
+<canvas id="my_canvas" width="500" height="350"></canvas>
+  
+  <div style="text-align: center">
+    <h5><a href="http://www.eleftheriabatsou.com" target="_blank">Eleftheria Batsou</a> | <a href="http://codepen.io/EleftheriaBatsou" target="_blank">Projects</a></h5>
+  </div> <!-- end footer -->
+  
+</body>  
+</html>
